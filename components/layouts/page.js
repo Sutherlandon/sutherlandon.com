@@ -10,10 +10,6 @@ export default (props) => {
       <div className='page-wrapper'>
         <div className='background-fader'></div>
         {props.children}
-        <div className="footer">
-          Designed by Landon Sutherland |
-          Built using <a href="https://purecss.io/">Pure</a> & <a href="http://lesscss.org/">Less</a>
-        </div>
       </div>
       <style jsx>{`
         .page {
@@ -25,6 +21,11 @@ export default (props) => {
           background-attachment: fixed;
           background-position: center -1355px;
           padding-top: 1px;
+          height: 100%;
+        }
+
+        .page-wrapper {
+          height: 100%;
         }
 
         .background-fader {
