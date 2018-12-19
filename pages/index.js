@@ -1,20 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
+import Page from '../components/layouts/page';
 
 export default () => (
-  <React.Fragment>
-  <Head>
-    <title>Sutherlandon</title>
-  </Head>
-
-  <div id="background-fader"></div>
-  <div className="page-wrapper">
+  <Page title='Sutherlandon'>
     <div className="logo-container">
       <img src='static/img/Gg/Gg-1.1.svg' alt='Gg Logo' />
     </div>
     <div className="content-border">
       <div className="content">
-        <h1>Projects by Landon Sutherland</h1>
+        <h1>Projects</h1>
         <div className="pure-g">
           <div className="project-container">
             <div className="pure-u-1 pure-u-lg-1-2 project-description">
@@ -50,7 +45,9 @@ export default () => (
             </div>
             <div className="pure-u-1 pure-u-lg-1-2 project-sample">
               <div className="gutter">
-                <img className="pure-img" src="static/img/theater-cms.jpg" />
+                <a href="http://sutherlandon.com/reeldeal" target="_">
+                  <img className="pure-img" src="static/img/theater-cms.jpg" />
+                </a>
               </div>
             </div>
             <div className="pure-u-1 action-container">
@@ -63,10 +60,5 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="footer">
-      Designed by Landon Sutherland |
-      Built using <a href="https://purecss.io/">Pure</a> & <a href="http://lesscss.org/">Less</a>
-    </div>
-  </div>
-  </React.Fragment>
+  </Page>
 );
