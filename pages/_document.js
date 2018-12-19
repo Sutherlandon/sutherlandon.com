@@ -22,6 +22,11 @@ export default class SiteDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <style jsx>{`
+          :global(html) {
+            background-color: #000;
+          }
+        `}</style>
       </html>
     )
   }
