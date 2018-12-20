@@ -1,5 +1,5 @@
 export default () => (
-  <svg aria-hidden='true' dataIcon='Gg' role='img' version="1.1" xmlns="http://www.w3.org/2000/svg"
+  <svg aria-hidden='true' data-icon='Gg' role='img' version="1.1" xmlns="http://www.w3.org/2000/svg"
    width="229.000000pt" height="342.000000pt" viewBox="0 0 229.000000 342.000000"
    preserveAspectRatio="xMidYMid meet">
     <g transform="translate(0.000000,342.000000) scale(0.100000,-0.100000)">
