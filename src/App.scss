@@ -1,0 +1,201 @@
+/* Colors */
+$dark-gray: #2f2f2f;
+$sun-yellow: #fdd168;
+$sun-orange: #d07139;
+$sun-brown: #613b2e;
+
+/* Colorscheme */
+$main-light: $sun-yellow;
+$main-medium: $sun-orange;
+$main-dark: $sun-brown;
+
+html, body, .page-wrapper {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.page {
+  font-family: Hack, Arial, sans-serif;
+  color: $dark-gray;
+  background: black;
+  background-image: url("/img/lc_sunset_square.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center -1355px;
+  padding-top: 1px;
+  height: 100%;
+}
+
+.page-wrapper {
+  min-width: 18.75em;
+  max-width: 75em;
+  margin: auto;
+}
+
+.background-fader {
+  position: fixed;
+  background: black;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  height: 1000px;
+  top: 640px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.gutter {
+  padding: 0 1em;
+}
+
+.top-menu {
+  display: fixed;
+  width: 80%;
+  margin: auto;
+  .pure-menu-link {
+    color: $dark-gray;
+  }
+}
+
+.logo-container {
+  text-align: center;
+  margin: 2em auto;
+  #logo-svg {
+    width: 80%;
+    path {
+      fill: $dark-gray;
+    }
+  }
+}
+
+.content-border {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 2em;
+  padding: 2px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), $main-medium);
+  z-index: 100;
+}
+
+.content {
+  box-sizing: border-box;
+  background: $dark-gray;
+  background: linear-gradient($dark-gray, black);
+  margin: auto;
+  padding: 2em 1em;
+  border-radius: 20px;
+  color: lightgray;
+  a {
+    color: $main-medium;
+    &:visited {
+      color: $main-dark;
+    }
+  }
+  .project-container {
+    margin-bottom: 3em;
+
+    .project-description {
+      text-align: justify;
+      margin-bottom: 1em;
+
+      .project-title {
+        color: $main-light;
+      }
+    }
+
+    .project-sample {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.action-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  .action-button {
+    padding: .5em 1em;
+    background: -webkit-linear-gradient(top left, $main-medium, $main-dark);
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  background: #000;
+  color: lightgray;
+  text-align: center;
+  padding: 1em;
+  border-radius: 20px 20px 0px 0px;
+  width: 80%;
+  margin: auto;
+  z-index: 100;
+  a {
+    color: lightgray;
+  }
+}
+
+.pure-u-1 {
+  margin-bottom: 2em;
+}
+
+.iframe-yt {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 50%; /* Actual youTube ratio */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 18.75em) {
+  .page {
+    background-image: url("/img/lc_sunset_md.jpg");
+    background-position: center -500px;
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  #logo-svg {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .page {
+    background-image: url("/img/lc_sunset_lg.jpg");
+    background-position: center -1355px;
+  }
+  #logo-svg {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #logo-svg {
+    width: 25%;
+  }
+  .page {
+    background-image: url("/img/lc_sunset_xl.jpg");
+    background-position: center -1355px;
+  }
+}

@@ -1,15 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import Page from '../components/layouts/page';
-import Content from '../components/layouts/content';
+import React, { Fragment } from 'react';
+import Content from './layouts/content';
 import FontAwesomeIcon from '../components/icon_library';
 import Gg from '../components/Gg';
 
 export default () => (
-  <Page title='A Thought'>
-    <Head>
-      <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
-    </Head>
+  <Fragment>
     <div style={{ margin: '2em auto' }}>
       <div className='logo'>
         <Gg />
@@ -27,12 +22,12 @@ export default () => (
       was always the same thing.  This can be like life.  Sometimes it just seems to be dragging on.
       The best thing to do is just focus on taking the next step.
     </Content>
-    <style jsx>{`
+    <style >{`
       .logo {
         width: 10%;
         margin: auto;
       }
-      .logo :global(svg) {
+      .logo svg {
         height: 100%;
         width: 100%;
       }
@@ -54,5 +49,5 @@ export default () => (
         text-shadow: 2px 2px rgba(0,0,0,0.5);
       }
     `}</style>
-  </Page>
+  </Fragment>
 );

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default () => (
   <svg aria-hidden='true' data-icon='Gg' role='img' version="1.1" xmlns="http://www.w3.org/2000/svg"
    width="229.000000pt" height="342.000000pt" viewBox="0 0 229.000000 342.000000"
