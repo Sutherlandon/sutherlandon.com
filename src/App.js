@@ -14,10 +14,10 @@ class App extends Component {
           <div className='background-fader'></div>
           <BrowserRouter history={history} >
             <Switch>
-              <Route path='/home' component={Home} />
-              <Route path='/blog' component={Blog} />
-              <Route path='/gg' component={Gg} />
-              <Redirect to='/home' />
+              <Route path='/app/home' component={Home} />
+              <Route path='/app/blog' component={Blog} />
+              <Route path='/app/gg' component={Gg} />
+              <Redirect to='/app/home' />
             </Switch>
           </BrowserRouter>
         </div>
