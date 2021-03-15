@@ -6,12 +6,14 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { 
   faEdit,
   faQuoteRight,
+  faUserAstronaut,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   fab,
   faEdit,
   faQuoteRight,
+  faUserAstronaut,
 );
 
 const useStyles = makeStyles((theme) => ({
