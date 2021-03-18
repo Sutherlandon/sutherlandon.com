@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -10,6 +10,7 @@ import Header from '../components/Header';
 import qwixxIcon from '../images/app-icons/qwixx-192.png';
 import tsweeperIcon from '../images/app-icons/tsweeper-192.png';
 import homeIcon from '../images/app-icons/home-192.png';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appCenterWrapper: {
@@ -31,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#3a3a3a',
     borderRadius: 8,
     boxShadow: '#717171 1px 1px 5px 0px',
+    cursor: 'pointer',
     width: 70,
     height: 70,
   },
@@ -43,6 +45,17 @@ const useStyles = makeStyles((theme) => ({
     width: 62,
     backgroundColor: '#b7a171',
   },
+  indicator: {
+    borderLeft: '1px solid #cacaca',
+    borderBottom: '1px solid #cacaca',
+    height: 15,
+    width: 15,
+    backgroundColor: '#f4eeed',
+    transform: 'rotate(-45deg)',
+    margin: 'auto',
+    marginTop: -27,
+    marginBottom: 11
+  },
   contentWrapper: {
     flexGrow: 1,
     overflowY: 'auto',
@@ -50,10 +63,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(),
   },
   content: {
-    backgroundColor: 'white',
-    borderRadius: 24,
     height: 'calc(100% - 16px)',
     padding: theme.spacing(),
+    textAlign: 'center',
   },
   column: {
     height: '100%',
@@ -78,6 +90,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Home(props) {
   const classes = useStyles();
+  const [index, setIndex] = useState(0);
 
   return (
     <>
@@ -99,22 +112,43 @@ function Home(props) {
           </Grid>
           <Grid item className={classes.contentWrapper}>
             <div className={classes.content}>
-             Hello World, I'm Landon!
+              <Typography variant='h3'>
+                Home
+              </Typography>
+              <Typography variant='body1'>
+                I am a creative who takes pride in building beautiful
+                web apps that makes someone's day just a little better.
+              </Typography>
             </div>
           </Grid>
           <Grid item className={classes.appCenterWrapper}>
             <div className={classes.appCenter}>
               <Grid container spacing={2} justify='space-around' wrap='nowrap'>
                 <Grid item className={classes.appIconContainer}>
-                  <img src={homeIcon} className={clsx(classes.appIcon, classes.homeIcon)} />
+                  {index === 0 && <div className={classes.indicator}></div>}
+                  <img 
+                    src={homeIcon}
+                    className={clsx(classes.appIcon, classes.homeIcon)}
+                    onClick={() => setIndex(0)}
+                  />
                   <div className={classes.appName}>Home</div>
                 </Grid>
                 <Grid item className={classes.appIconContainer}>
-                  <img src={tsweeperIcon} className={classes.appIcon} />
+                  {index === 1 && <div className={classes.indicator}></div>}
+                  <img 
+                    src={tsweeperIcon}
+                    className={classes.appIcon}
+                    onClick={() => setIndex(1)}
+                  />
                   <div className={classes.appName}>T*Sweeper</div>
                 </Grid>
                 <Grid item className={classes.appIconContainer}>
-                  <img src={qwixxIcon} className={classes.appIcon} />
+                  {index === 2 && <div className={classes.indicator}></div>}
+                  <img 
+                    src={qwixxIcon}
+                    className={classes.appIcon}
+                    onClick={() => setIndex(2)}
+                  />
                   <div className={classes.appName}>QWIXX</div>
                 </Grid>
               </Grid>
