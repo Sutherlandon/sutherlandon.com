@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     opacity: 0.8,
   },
   logoWrapper: {
+    minWidth: 400,
     position: 'absolute',
     top: 10,
     textAlign: 'center',

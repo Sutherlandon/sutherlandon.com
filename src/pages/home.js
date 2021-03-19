@@ -3,14 +3,15 @@ import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 
 import FAIcon from '../components/icon_library';
 import Header from '../components/Header';
 
+import homeIcon from '../images/app-icons/home-192.png';
+import profilePhoto from '../images/profile-drawing.jpg';
 import qwixxIcon from '../images/app-icons/qwixx-192.png';
 import tsweeperIcon from '../images/app-icons/tsweeper-192.png';
-import homeIcon from '../images/app-icons/home-192.png';
-import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appCenterWrapper: {
@@ -39,6 +40,32 @@ const useStyles = makeStyles((theme) => ({
   appName: {
     textAlign: 'center',
   },
+  column: {
+    height: '100%',
+  },
+  contentWrapper: {
+    flexGrow: 1,
+    overflowY: 'auto',
+    overflow: 'hidden',
+    padding: theme.spacing(),
+  },
+  content: {
+    height: 'calc(100% - 16px)',
+    padding: theme.spacing(),
+    textAlign: 'center',
+  },
+  fullHeight: {
+    height: '100%',
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  header: {
+    marginBottom: theme.spacing(2),
+  },
+  headshot: {
+    width: 270,
+  },
   homeIcon: {
     padding: 4,
     height: 62,
@@ -56,35 +83,20 @@ const useStyles = makeStyles((theme) => ({
     marginTop: -27,
     marginBottom: 11
   },
-  contentWrapper: {
-    flexGrow: 1,
-    overflowY: 'auto',
-    overflow: 'hidden',
-    padding: theme.spacing(),
-  },
-  content: {
-    height: 'calc(100% - 16px)',
-    padding: theme.spacing(),
-    textAlign: 'center',
-  },
-  column: {
-    height: '100%',
-  },
-  pageWrapper: {
-    height: 'calc(100vh - 216px)',
-    margin: 'auto',
-    maxWidth: 800,
-    position: 'relative',
-    top: -50,
-    width: '100%',
-  },
   menu: {
     margin: 'auto',
     maxWidth: 600,
     padding: theme.spacing(2),
+    position: 'relative',
+    top: -30,
   },
-  grow: {
-    flexGrow: 1,
+  pageWrapper: {
+    height: 'calc(100vh - 216px)',
+    margin: 'auto',
+    maxWidth: 600,
+    position: 'relative',
+    top: -50,
+    width: '100%',
   },
 }));
 
@@ -112,13 +124,36 @@ function Home(props) {
           </Grid>
           <Grid item className={classes.contentWrapper}>
             <div className={classes.content}>
-              <Typography variant='h3'>
+              <Grid container spacing={2} wrap='nowrap' alignItems='center' className={classes.fullHeight}>
+                <Grid item className={classes.grow}>
+                  <Typography variant='h4'>
+                    Round every corner
+                  </Typography>
+                  <Typography variant='h4'>
+                    Lies fleeting hope of respite
+                  </Typography>
+                  <Typography variant='h4'>
+                    Focus on next step 
+                  </Typography>
+                </Grid>
+              </Grid>
+              {/* <Typography variant='h3' className={classes.header}>
                 Home
               </Typography>
-              <Typography variant='body1'>
-                I am a creative who takes pride in building beautiful
-                web apps that makes someone's day just a little better.
-              </Typography>
+              <Grid container spacing={2} wrap='nowrap'>
+                <Grid item>
+                  <Typography variant='body1'>
+                    Husband, Father, Creative.
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <img
+                    src={profilePhoto} 
+                    alt='headshot photo'
+                    className={classes.headshot}
+                  />
+                </Grid>
+              </Grid> */}
             </div>
           </Grid>
           <Grid item className={classes.appCenterWrapper}>
