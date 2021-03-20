@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Content from './layouts/content';
-import FontAwesomeIcon from '../components/icon_library';
+import FAIcon from '../components/FAIcon';
 import Gg from '../components/Gg';
 
 export default () => (
@@ -13,7 +13,7 @@ export default () => (
         Round every corner<br/>Lies fleeting hope of respite<br/>Focus on next step
       </div>
       <div className='end-quote'>
-        <FontAwesomeIcon icon='quote-right' size='5x'/>
+        <FAIcon icon='quote-right' size='5x'/>
       </div>
     </div>
     <Content>

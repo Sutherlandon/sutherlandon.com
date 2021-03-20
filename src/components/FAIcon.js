@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { 
   faEdit,
+  faExternalLinkAlt,
   faQuoteRight,
   faUserAstronaut,
 } from '@fortawesome/free-solid-svg-icons'
@@ -12,6 +13,7 @@ import {
 library.add(
   fab,
   faEdit,
+  faExternalLinkAlt,
   faQuoteRight,
   faUserAstronaut,
 );
