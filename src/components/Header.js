@@ -5,7 +5,7 @@ import logo from '../images/Gg/Gg-1.1.svg';
 import forest from '../images/forest.jpg';
 import dip from '../images/dip-mask.svg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   header: {
     height: 266,
     backgroundImage: `url(${forest})`,
@@ -17,25 +17,26 @@ const useStyles = makeStyles({
     opacity: 0.8,
   },
   logoWrapper: {
+    height: '100%',
     minWidth: 400,
-    position: 'absolute',
-    top: 10,
+    padding: theme.spacing(),
     textAlign: 'center',
     width: '100%',
   },
   logo: {
-    height: 240,
+    height: '100%',
   },
-});
+}));
 
 function Header(props) {
   const classes = useStyles();
 
   return (
     <>
-      <div className={classes.header}></div>
-      <div className={classes.logoWrapper}>
-        <img src={logo} className={classes.logo} alt='Gg Logo' />
+      <div className={classes.header}>
+        <div className={classes.logoWrapper}>
+          <img src={logo} className={classes.logo} alt='Gg Logo' />
+        </div>
       </div>
     </>
   );
