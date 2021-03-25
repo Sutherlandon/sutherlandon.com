@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import logo from '../images/Gg/Gg-1.1.svg';
-import forest from '../images/forest.jpg';
+import forest from '../images/forest-faded.jpg';
 import dip from '../images/dip-mask.svg';
 
 const useStyles = makeStyles((theme) => ({
@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     maskImage: `url(${dip})`,
     maskPosition: 'center bottom',
     maskRepeat: 'no-repeat',
-    opacity: 0.8,
   },
   logoWrapper: {
     height: '100%',

@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
   appCenterWrapper: {
     background: '#f4eeed',
     bottom: 0,
+    boxShadow: '0px -10px 20px 12px #f4eeed',
     maxWidth: 600,
-    paddingTop: theme.spacing(2),
     position: 'fixed',
     width: '100%',
   },
@@ -49,15 +49,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#b7a171',
   },
   indicator: {
-    borderLeft: '1px solid #cacaca',
+    background: 'linear-gradient(45deg, #f4eeed 50%, rgba(0,0,0,0) 0%)',
     borderBottom: '1px solid #cacaca',
+    borderLeft: '1px solid #cacaca',
     height: 15,
-    width: 15,
-    backgroundColor: '#f4eeed',
-    transform: 'rotate(-45deg)',
     margin: 'auto',
+    marginBottom: 11,
     marginTop: -27,
-    marginBottom: 11
+    transform: 'rotate(-45deg)',
+    width: 15,
   },
 }));
 
