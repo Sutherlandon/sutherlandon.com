@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,6 +11,7 @@ import tsweeperImg from '../images/tsweeper.jpg';
 
 const useStyles = makeStyles((theme) => ({
   block: {
+    fontSize: 16,
     marginBottom: theme.spacing(2),
   },
   content: {
@@ -28,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     width: '100%',
   },
+  noPageHeader: {
+    paddingTop: `${theme.spacing(9)}px !important`,
+  },
   page: {
     height: 'calc(100% - 16px)',
     padding: theme.spacing(),
@@ -43,7 +48,25 @@ export default function Content(props) {
     <div className={classes.contentWrapper}>
       <div className={classes.page}>
         <Grid container spacing={2} wrap='nowrap' alignItems='center'>
-          {index !== 2 &&
+          {index === 0 &&
+            <Grid item className={clsx(classes.grow, classes.noPageHeader)}>
+              <div className={classes.content}>
+                <div className={classes.block} style={{ textAlign: 'center' }}>
+                  <Typography variant='h4'>
+                    "I code because I'm a creative and I can't draw!"
+                  </Typography>
+                </div>
+                <div className={classes.block}>
+                  Well... actually I love coding, I always have.  So much so that I have a master's
+                  degree in Computer Science and coding in my full time job.  I'm a full-stack
+                  Software Developer even though I would rather spend my time on the front end.
+                  I build things that I think are cool and in turn, make the world a better place.
+                  Hi, my name is Landon.
+                </div>
+              </div>
+            </Grid>
+          }
+          {index === 1 &&
             <Grid item className={classes.grow}>
               <Grid container justify='space-between' className={classes.header}>
                 <Grid item>
