@@ -76,7 +76,7 @@ export default function Content(props) {
                 </Grid>
                 <Grid item>
                   <Button
-                    href="https://tsweeper.com"
+                    href="https://tsweeper.sutherlandon.com"
                     target="_"
                     variant='contained'
                   >
@@ -101,7 +101,7 @@ export default function Content(props) {
                   unix terminal. Built purely in React, it is also a Progressive Web App, so you can 
                   install it on your phone.<br/>
                   <br/>
-                  App: <a href="https://tsweeper.com">tsweeper.com</a><br/>
+                  App: <a href="https://tsweeper.sutherlandon.com">tsweeper.sutherlandon.com</a><br/>
                   Source: <a href="https://github.com/sutherlandon/tsweeper">T*Sweeper on Github</a>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Content(props) {
                 </Grid>
                 <Grid item>
                   <Button
-                    href="https://sutherlandon.com/qwixx-app"
+                    href="https://qwixx.sutherlandon.com"
                     target="_"
                     variant='contained'
                   >
@@ -143,7 +143,7 @@ export default function Content(props) {
                   is a Progressive Web App so you can install it on your device to have offline access to it
                   everywhere. You'll find a link to the rules in the app.<br />
                   <br />
-                  App: <a href='https://sutherlandon.com/qwixx-app'>sutherlandon.com/qwixx-app</a><br />
+                  App: <a href='https://qwixx.sutherlandon.com'>qwixx.sutherlandon.com</a><br />
                   Source: <a href='https://github.com/sutherlandon/qwixx-app'>QWIXX App on Github</a>
                 </div>
               </div>
