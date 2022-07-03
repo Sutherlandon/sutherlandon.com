@@ -8,6 +8,7 @@ import homeIcon from '../images/app-icons/home-192.png';
 import profilePhoto from '../images/profile-drawing.jpg';
 import qwixxIcon from '../images/app-icons/qwixx-192.png';
 import tsweeperIcon from '../images/app-icons/tsweeper-192.png';
+import cribbageIcon from '../images/app-icons/cribbage-192.png';
 
 const useStyles = makeStyles((theme) => ({
   appCenterWrapper: {
@@ -36,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 8,
     boxShadow: '#717171 1px 1px 5px 0px',
     cursor: 'pointer',
-    width: 70,
-    height: 70,
+    width: 62,
+    height: 62,
   },
   appName: {
     textAlign: 'center',
@@ -69,10 +70,11 @@ export default function AppCenter(props) {
     <div className={classes.appCenterWrapper}>
       <div className={classes.appCenterBorder}>
         <div className={classes.appCenter}>
-          <Grid container spacing={2} justify='space-around' wrap='nowrap'>
+          <Grid container justify='space-around' wrap='nowrap'>
             <Grid item className={classes.appIconContainer}>
               {index === 0 && <div className={classes.indicator}></div>}
               <img
+                alt='Home Page Icon'
                 src={homeIcon}
                 className={clsx(classes.appIcon, classes.homeIcon)}
                 onClick={() => setIndex(0)}
@@ -82,6 +84,7 @@ export default function AppCenter(props) {
             <Grid item className={classes.appIconContainer}>
               {index === 1 && <div className={classes.indicator}></div>}
               <img
+                alt='T Sweeper App Icon'
                 src={tsweeperIcon}
                 className={classes.appIcon}
                 onClick={() => setIndex(1)}
@@ -91,11 +94,22 @@ export default function AppCenter(props) {
             <Grid item className={classes.appIconContainer}>
               {index === 2 && <div className={classes.indicator}></div>}
               <img
+                alt='QWIXX App Icon'
                 src={qwixxIcon}
                 className={classes.appIcon}
                 onClick={() => setIndex(2)}
               />
               <div className={classes.appName}>QWIXX</div>
+            </Grid>
+            <Grid item className={classes.appIconContainer}>
+              {index === 3 && <div className={classes.indicator}></div>}
+              <img
+                alt='Cribbage Icon'
+                src={cribbageIcon}
+                className={classes.appIcon}
+                onClick={() => setIndex(3)}
+              />
+              <div className={classes.appName}>Cribbage</div>
             </Grid>
           </Grid>
         </div>
