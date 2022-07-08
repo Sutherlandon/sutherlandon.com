@@ -2,10 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
 
 import homeIcon from '../images/app-icons/home-192.png';
-import profilePhoto from '../images/profile-drawing.jpg';
 import qwixxIcon from '../images/app-icons/qwixx-192.png';
 import tsweeperIcon from '../images/app-icons/tsweeper-192.png';
 import cribbageIcon from '../images/app-icons/cribbage-192.png';

@@ -63,10 +63,10 @@ export default function Content(props) {
                   things that I think are cool and also make the world a better place.
                 </div>
                 <div className={classes.block}>
-                  Hi, my name is Landon. 👋
+                  This site is my showcase.  Click the app icons below to explore my favorite projects.
                 </div>
                 <div className={classes.block}>
-                  This site is my showcase.  Click the app icons below to explore my favorite projects.
+                  Hi, my name is Landon. 👋
                 </div>
               </div>
             </Grid>
