@@ -54,7 +54,7 @@ export default function Content(props) {
               <div className={classes.content}>
                 <div className={classes.block} style={{ textAlign: 'center' }}>
                   <Typography variant='h4'>
-                    "I'm a Creative. Code is my outlet."
+                    "I'm a Creative. Code is my canvas."
                   </Typography>
                 </div>
                 <div className={classes.block}>
@@ -104,7 +104,7 @@ export default function Content(props) {
                   minesweeper game that I wrote as an assignment in high school.  This game uses
                   nothing but text for graphics and layout, and accepts typed commands, simulating a
                   unix terminal. Built purely in React, it is also a Progressive Web App, so you can
-                  install it on your phone.<br />
+                  install it on your phone and take it with you on the go.<br />
                   <br />
                   App: <a href="https://tsweeper.sutherlandon.com">tsweeper.sutherlandon.com</a><br />
                   Source: <a href="https://github.com/sutherlandon/tsweeper">T*Sweeper on Github</a>
@@ -143,7 +143,7 @@ export default function Content(props) {
                 <div className={classes.block}>
                   QWIXX is a table top game played with six dice and score cards.  I enjoyed the game so much
                   that I built this web app as a passion project. The main goal of this project was to make the
-                  game more accessible because it is not always practicle to roll dice, for example, in the car
+                  game more accessible because it is not always practical to roll dice, for example, in the car
                   or on an airplane.  To support that goal, this app scales to any size screen gracefully and
                   is a Progressive Web App so you can install it on your device to have offline access to it
                   everywhere. You'll find a link to the rules in the app.

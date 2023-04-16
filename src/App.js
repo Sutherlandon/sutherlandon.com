@@ -3,8 +3,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Switch, Redirect, Router, Route } from 'react-router-dom';
 import history from './api/history';
 
-// import './App.scss';
-
 import { Blog, Home, Gg } from './pages';
 
 class App extends Component {
