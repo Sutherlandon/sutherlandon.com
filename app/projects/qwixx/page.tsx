@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Block from "@/components/Block"
-import FAIcon from "@/components/FAIcon";
 import PageHeader from "@/components/PageHeader";
 
 export default function Page() {
