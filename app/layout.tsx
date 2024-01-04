@@ -36,8 +36,8 @@ export default function RootLayout({
         >
           <div className='h-full' style={{ width: drawerWidth }}>
             <div className='h-full px-4 pt-8 m-auto' style={{
-              background: `linear-gradient(-60deg, ${backgroundColor} ${gradientEdge}%, transparent ${gradientEdge}%), ` +
-                          `linear-gradient(60deg, ${backgroundColor} ${gradientEdge}%, transparent ${gradientEdge}%)`,
+              background: `linear-gradient(-60deg, ${backgroundColor} ${gradientEdge}%, transparent ${gradientEdge}.2%), ` +
+                          `linear-gradient(60deg, ${backgroundColor} ${gradientEdge}%, transparent ${gradientEdge}.2%)`,
             }}>
               <Image
                 src='/img/Gg-1.1.svg'

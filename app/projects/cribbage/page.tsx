@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Block from "@/components/Block"
+import PageHeader from "@/components/PageHeader";
 
 export default function Page() {
   return (
     <div>
-      <div className='text-4xl mb-8'>
-        Cribbage Board
-      </div> 
+      <PageHeader
+        title='Cribbage Board'
+        launchHref='https://crib.sutherlandon.com'
+      />
       <Block className='mb-8'>
         <Image
           src='/img/showcase/cribbage.jpg'
