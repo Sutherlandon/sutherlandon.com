@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div>
       <PageHeader
-        title='Cribbage Board'
+        title='Cribbage'
         launchHref='https://crib.sutherlandon.com'
       />
       <Block className='mb-8'>
@@ -17,6 +17,7 @@ export default function Page() {
           height='340'
           alt='Cribbage Board Showcase'
           className='max-w-full'
+          fetchPriority='high'
         />
       </Block>
       <Block>

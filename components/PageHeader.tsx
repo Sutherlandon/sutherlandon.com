@@ -5,7 +5,7 @@ export default function PageHeader({
   title,
   launchHref,
 }: {
-  title: JSX.Element | string,
+  title: React.ReactNode,
   launchHref?: string,
 }) {
   return (

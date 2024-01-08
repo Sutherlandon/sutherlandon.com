@@ -5,13 +5,17 @@ import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontaw
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { 
   faExternalLinkAlt,
+  faBars,
   faUserAstronaut,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   fab,
   faExternalLinkAlt,
   faUserAstronaut,
+  faBars,
+  faTimes,
 );
 
 // Add left and right spacing props to the font icon

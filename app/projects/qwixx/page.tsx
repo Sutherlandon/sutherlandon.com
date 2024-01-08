@@ -17,6 +17,7 @@ export default function Page() {
           height='340'
           alt='QWIXX App Showcase'
           className='max-w-full'
+          fetchPriority='high'
         />
       </Block>
       <Block>
