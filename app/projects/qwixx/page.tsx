@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Image from "next/image";
 import Link from "next/link";
 import Block from "@/components/Block"
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: 'QWIXX',
+  description: 'A fully playable QWIXX game on the Sutherlandon App',
+}
 
 export default function Page() {
   return (
@@ -29,8 +35,8 @@ export default function Page() {
         everywhere. You&apos;ll find a link to the rules in the app.
       </Block>
       <Block>
-        App: <Link href='https://qwixx.sutherlandon.com'>qwixx.sutherlandon.com</Link><br />
-        Source: <Link href='https://github.com/sutherlandon/qwixx-app'>QWIXX App on Github</Link>
+        App: <Link href='https://qwixx.sutherlandon.com' className='underline text-blue-500'>qwixx.sutherlandon.com</Link><br />
+        Source: <Link href='https://github.com/sutherlandon/qwixx-app' className='underline text-blue-500'>QWIXX App on Github</Link>
       </Block>
     </div>
   );

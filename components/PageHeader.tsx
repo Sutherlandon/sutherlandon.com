@@ -13,7 +13,7 @@ export default function PageHeader({
       <div className='text-4xl'>
         {title}
       </div>
-      {launchHref ? (
+      {launchHref &&
         <div>
           <Link href={launchHref}>
             <div className='border border-gray-800 p-2 px-4 hover:bg-yellow-100'>
@@ -21,9 +21,7 @@ export default function PageHeader({
             </div>
           </Link>
         </div>
-      ) : (
-        <div></div>
-      )}
+      }
     </div>
   );
 }

@@ -31,18 +31,22 @@ function MenuItem({
 }
 
 export default function MenuContent({
+  noHome,
   close,
 }: {
+  noHome?: boolean,
   close?: () => void,
 }) {
   return (
     <>
-      <MenuItem
-        href='/'
-        image='/img/app-icons/home-192.png'
-        text='Home'
-        onClick={close}
-      />
+      {!noHome &&
+        <MenuItem
+          href='/'
+          image='/img/app-icons/home-192.png'
+          text='Home'
+          onClick={close}
+        />
+      }
       <MenuItem
         href='/projects/cribbage'
         image='/img/app-icons/cribbage-192.png'

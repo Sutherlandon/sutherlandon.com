@@ -1,4 +1,5 @@
 import Block from '@/components/Block';
+import MenuContent from '@/components/MenuContent';
 
 export default function Page() {
   return (
@@ -14,9 +15,12 @@ export default function Page() {
       <Block>
         This site is my showcase.  Click the app icons below to explore my favorite projects.
       </Block>
-      <Block>
+      <Block className='mb-10'>
         Hi, my name is Landon. 👋
       </Block>
+      <div className='md:hidden max-w-sm'>
+        <MenuContent noHome />
+      </div>
     </div>
   );
 }

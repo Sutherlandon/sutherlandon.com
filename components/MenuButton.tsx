@@ -28,15 +28,8 @@ export default function MenuButton() {
         className={clsx(
           open && 'block',
           !open && 'hidden',
-          'absolute p-4 shadow-2xl'
+          'absolute p-4 shadow-2xl bg-[--bg-hex] h-[calc(100vh-73px)] right-0 top-[73px]'
         )}
-        style={{
-          backgroundColor,
-          height: 'calc(100vh - 73px)',
-          right: 0,
-          top: 73,
-
-        }}
       >
         <div className='flex justify-between'>
           <div className='text-3xl text-gray-800'>Apps</div>

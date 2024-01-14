@@ -1,5 +1,16 @@
 import type { Config } from 'tailwindcss'
 
+const layout = {
+  sm: {
+    headerHeight: 160,
+    gradientEdge: 26,
+  },
+  md: {
+    headerHeight: 490,
+    gradientEdge: 25,
+  },
+}
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',

@@ -1,7 +1,6 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import FAIcon from '@/components/FAIcon';
 
 import './globals.css'
 import MenuContent from '@/components/MenuContent';
@@ -10,8 +9,17 @@ import MenuButton from '@/components/MenuButton';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sutherlandon',
+  title: { absolute: 'Sutherlandon', template: '%s - Sutherlandon App' },
   description: 'Sutherlandon App',
+  icons: //[{ rel: 'icon', url: '/img/web-icons/Gg-logo-32.png' }],
+  {
+    icon: [
+      { url: '/img/web-icons/Gg-logo-16.png', sizes: "16x16", type: 'image/png' },
+      { url: '/img/web-icons/Gg-logo-32.png', sizes: "32x32", type: 'image/png' }
+    ],
+    shortcut: '/img/web-icons/Gg-logo-32.png',
+    apple: '/img/web-icons/Gg-logo-192.png'
+  }
 }
 
 export default function RootLayout({
@@ -19,39 +27,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const drawerWidth = 280;
-  const backgroundColor = '#FAEEED';
-
-  const layout = {
-    sm: {
-      headerHeight: 160,
-      gradientEdge: 26,
-    },
-    md: {
-      headerHeight: 490,
-      gradientEdge: 25,
-    },
-  }
 
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundColor }}>
+      <body className={inter.className}>
         {/* Small- Layout */}
         <div id='sm-layout' className='block md:hidden'>
           <div
             id='header'
-            className='flex w-full bg-cover bg-center'
-            style={{
-              height: 160,
-              backgroundImage: 'url(/img/forest-faded.jpg)',
-            }}
+            className='flex w-full bg-forest bg-cover bg-center h-[--sm-header-height]'
           >
-            <div className='h-full' style={{ width: 100 }}>
-              <div className='h-full px-4 m-auto' style={{
-                paddingTop: 25,
-                background: `linear-gradient(-60deg, ${backgroundColor} ${layout.sm.gradientEdge}%, transparent ${layout.sm.gradientEdge}.2%), ` +
-                  `linear-gradient(60deg, ${backgroundColor} ${layout.sm.gradientEdge}%, transparent ${layout.sm.gradientEdge}.2%)`,
-              }}>
+            <div className='h-full w-[100px]'>
+              <div className='h-full px-4 pt-[25px] m-auto bg-vGradientSm'>
                 <Image
                   src='/img/Gg-1.0.svg'
                   width='250'
@@ -63,23 +50,12 @@ export default function RootLayout({
             <div className='grow'>
               <MenuButton />
             </div>
-            {/* <div id='menu' className='p-2 pt-8' style={{
-              width: drawerWidth,
-              height: `calc(100vh - ${headerHeight}px)`,
-              backgroundColor
-            }}>
-              <MenuContent />
-            </div> */}
           </div>
           <div
             id='content'
             className='p-4 pt-8 text-gray-800'
-            style={{
-              background: backgroundColor,
-              minHeight: `calc(100vh - (${layout.sm.headerHeight}px/2))`
-            }}
           >
-            <div style={{ maxWidth: '60rem' }}>
+            <div className='max-w-[60rem]'>
               {children}
             </div>
           </div>
@@ -89,17 +65,10 @@ export default function RootLayout({
         <div id='md-layout' className='hidden md:block'>
           <div
             id='header'
-            className='bg-cover bg-center'
-            style={{
-              height: layout.md.headerHeight,
-              backgroundImage: 'url(/img/forest-faded.jpg)',
-            }}
+            className='bg-forest bg-cover bg-center h-[--md-header-height]'
           >
-            <div className='h-full' style={{ width: drawerWidth }}>
-              <div className='h-full px-4 pt-8 m-auto' style={{
-                background: `linear-gradient(-60deg, ${backgroundColor} ${layout.md.gradientEdge}%, transparent ${layout.md.gradientEdge}.2%), ` +
-                  `linear-gradient(60deg, ${backgroundColor} ${layout.md.gradientEdge}%, transparent ${layout.md.gradientEdge}.2%)`,
-              }}>
+            <div className='h-full w-[--drawer-width]'>
+              <div className='h-full px-4 pt-8 m-auto bg-vGradientMd'>
                 <Image
                   src='/img/Gg-1.0.svg'
                   width='250'
@@ -108,30 +77,21 @@ export default function RootLayout({
                 />
               </div>
             </div>
-            <div id='menu' className='p-2 pt-8' style={{
-              width: drawerWidth,
-              height: `calc(100vh - ${layout.md.headerHeight}px)`,
-              backgroundColor
-            }}>
+            <div id='menu' className='p-2 pt-8 w-[--drawer-width]'>
               <MenuContent />
             </div>
           </div>
           <div
             id='content'
-            className='p-8 text-gray-800'
-            style={{
-              marginLeft: drawerWidth,
-              marginTop: -layout.md.headerHeight / 2,
-              background: backgroundColor,
-              minHeight: `calc(100vh - (${layout.md.headerHeight}px/2))`
-            }}
+            className={`p-8 text-gray-800 ml-[--drawer-width] -mt-[calc(var(--md-header-height)/2+10px)] bg-[--bg-hex]`}
           >
-            <div style={{ maxWidth: '60rem' }}>
+            <div className='max-w-[60rem]'>
               {children}
             </div>
           </div>
         </div>
       </body>
+      
     </html>
   );
 }

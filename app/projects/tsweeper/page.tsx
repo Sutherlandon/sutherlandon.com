@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Image from "next/image";
 import Link from "next/link";
 import Block from "@/components/Block"
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: 'T*Sweeper',
+  description: 'A text based minsweeper game on the Sutherlandon App',
+}
 
 export default function Page() {
   return (
@@ -29,8 +35,8 @@ export default function Page() {
         install it on your phone and take it with you on the go.
       </Block>
       <Block>
-        App: <Link href="https://tsweeper.sutherlandon.com">tsweeper.sutherlandon.com</Link><br />
-        Source: <Link href="https://github.com/sutherlandon/tsweeper">T*Sweeper on Github</Link>
+        App: <Link href="https://tsweeper.sutherlandon.com" className='underline text-blue-500'>tsweeper.sutherlandon.com</Link><br />
+        Source: <Link href="https://github.com/sutherlandon/tsweeper" className='underline text-blue-500'>T*Sweeper on Github</Link>
       </Block>
     </div>
   );

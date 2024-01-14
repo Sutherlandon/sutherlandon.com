@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Image from "next/image";
 import Link from "next/link";
 import Block from "@/components/Block"
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: 'Cribbage Board',
+  description: 'The Cribbage Board game on the Sutherlandon App',
+}
 
 export default function Page() {
   return (
