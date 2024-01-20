@@ -6,6 +6,7 @@ import Image from 'next/image';
 import './globals.css'
 import MenuContent from '@/components/MenuContent';
 import MenuButton from '@/components/MenuButton';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <SpeedInsights />
+
         {/* Small- Layout */}
         <div id='sm-layout' className='block md:hidden'>
           <div

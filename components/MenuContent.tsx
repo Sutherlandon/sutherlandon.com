@@ -13,7 +13,7 @@ function MenuItem({
   onClick?: () => void,
 }) {
   return (
-    <Link href={href} onClick={onClick}>
+    <Link href={href} onClick={onClick} prefetch>
       <div className='border border-gray-800 flex p-2 px-4 mb-4 items-center hover:bg-yellow-100'>
         <div className='rounded mr-4 bg-white' style={{ boxShadow: '#717171 1px 1px 5px 0px' }}>
           <Image
