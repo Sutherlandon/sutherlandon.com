@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 
@@ -39,12 +40,14 @@ export default function RootLayout({
           >
             <div className='h-full w-[100px]'>
               <div className='h-full px-4 pt-[25px] m-auto bg-vGradientSm'>
-                <Image
-                  src='/img/Gg-1.0.svg'
-                  width='250'
-                  height='375'
-                  alt='Gg Logo'
-                />
+                <Link href='/' className='cursor-pointer'>
+                  <Image
+                    src='/img/Gg-1.0.svg'
+                    width='250'
+                    height='375'
+                    alt='Gg Logo'
+                  />
+                </Link>
               </div>
             </div>
             <div className='grow'>
@@ -69,12 +72,14 @@ export default function RootLayout({
           >
             <div className='h-full w-[--drawer-width]'>
               <div className='h-full px-4 pt-8 m-auto bg-vGradientMd'>
+                <Link href='/' className='cursor-pointer'>
                 <Image
                   src='/img/Gg-1.0.svg'
                   width='250'
                   height='375'
                   alt='Gg Logo'
                 />
+                </Link>
               </div>
             </div>
             <div id='menu' className='p-2 pt-8 w-[--drawer-width]'>
@@ -91,7 +96,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      
+
     </html>
   );
 }

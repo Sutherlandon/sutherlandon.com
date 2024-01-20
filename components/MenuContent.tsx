@@ -48,6 +48,12 @@ export default function MenuContent({
         />
       }
       <MenuItem
+        href='/projects/troop.tools'
+        image='/img/app-icons/troop.tools-192.png'
+        text='Troop.Tools'
+        onClick={close}
+      />
+      <MenuItem
         href='/projects/cribbage'
         image='/img/app-icons/cribbage-192.png'
         text='Cribbage'
