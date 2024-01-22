@@ -51,6 +51,7 @@ export default function RootLayout({
                     width='250'
                     height='375'
                     alt='Gg Logo'
+                    className='logo-color'
                   />
                 </Link>
               </div>
@@ -83,6 +84,7 @@ export default function RootLayout({
                   width='250'
                   height='375'
                   alt='Gg Logo'
+                  className='logo-color'
                 />
                 </Link>
               </div>

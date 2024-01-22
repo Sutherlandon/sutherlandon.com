@@ -7,16 +7,18 @@ function MenuItem({
   image,
   text,
   onClick,
+  noHome,
 }: {
   href: string,
   image: string,
   text: string,
+  noHome?: boolean,
   onClick?: () => void,
 }) {
   return (
     <Link href={href} onClick={onClick} prefetch>
-      <Button>
-        <div className='rounded mr-4 bg-white' style={{ boxShadow: '#717171 1px 1px 5px 0px' }}>
+      <Button className={noHome ? 'pl-0' : ''}>
+        <div className='rounded mr-4 bg-white shadow-md shadow-black/25'>
           <Image
             src={image}
             className='rounded'
@@ -32,7 +34,7 @@ function MenuItem({
 }
 
 export default function MenuContent({
-  noHome,
+  noHome = false,
   close,
 }: {
   noHome?: boolean,
@@ -53,24 +55,28 @@ export default function MenuContent({
         image='/img/app-icons/troop.tools-192.png'
         text='Troop.Tools'
         onClick={close}
+        noHome={noHome}
       />
       <MenuItem
         href='/projects/cribbage'
         image='/img/app-icons/cribbage-192.png'
         text='Cribbage'
         onClick={close}
+        noHome={noHome}
       />
       <MenuItem
         href='/projects/qwixx'
         image='/img/app-icons/qwixx-192.png'
         text='QWIXX'
         onClick={close}
+        noHome={noHome}
       />
       <MenuItem
         href='/projects/tsweeper'
         image='/img/app-icons/tsweeper-192.png'
         text='T*Sweeper'
         onClick={close}
+        noHome={noHome}
       />
     </>
   );

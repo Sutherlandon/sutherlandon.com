@@ -17,7 +17,7 @@ export default function PageHeader({
       {launchHref &&
         <div>
           <Link href={launchHref}>
-            <Button className='shadow md:shadow-black/60 md:bg-slate-400'>
+            <Button className='border border-slate-400 shadow md:shadow-black/60'>
               Launch<FAIcon icon='external-link-alt' right className='h-4 inline'/>
             </Button>
           </Link>

@@ -15,7 +15,7 @@ export default function Page() {
       <Block>
         This site is my showcase.  Click the app icons below to explore my favorite projects.
       </Block>
-      <Block className='mb-10'>
+      <Block className='mb-11'>
         Hi, my name is Landon. 👋
       </Block>
       <div className='md:hidden max-w-sm'>

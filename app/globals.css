@@ -5,7 +5,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --bg-hex: #FAEEED;
+  --bg-hex: hsl(4.62deg 56.52% 95.49%);
   --drawer-width: 280px;
   --gradient-edge: 26%;
   --sm-gradient-edge-off: 26.5%;
@@ -39,5 +39,11 @@ body {
 }
 
 .bg-forest {
-  background-image: url(/img/forest-faded.jpg);
+  background-image: linear-gradient(to bottom, hsl(0deg 0% 100% / 15%), hsl(0deg 0% 100% / 15%)), url(/img/fall-forest-4k.jpg);
+}
+
+.logo-color {
+  /* --bg-hex */
+  /* filter: invert(96%) sepia(100%) saturate(344%) hue-rotate(292deg) brightness(106%) contrast(96%); */
+  /* filter: invert(72%) sepia(21%) saturate(290%) hue-rotate(175deg) brightness(87%) contrast(85%); */
 }
