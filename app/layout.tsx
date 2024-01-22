@@ -47,7 +47,7 @@ export default function RootLayout({
               <div className='h-full px-4 pt-[25px] m-auto bg-vGradientSm'>
                 <Link href='/' className='cursor-pointer'>
                   <Image
-                    src='/img/Gg-1.0.svg'
+                    src='/img/Gg-1.1.svg'
                     width='250'
                     height='375'
                     alt='Gg Logo'
@@ -79,7 +79,7 @@ export default function RootLayout({
               <div className='h-full px-4 pt-8 m-auto bg-vGradientMd'>
                 <Link href='/' className='cursor-pointer'>
                 <Image
-                  src='/img/Gg-1.0.svg'
+                  src='/img/Gg-1.1.svg'
                   width='250'
                   height='375'
                   alt='Gg Logo'

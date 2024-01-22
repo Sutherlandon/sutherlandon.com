@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FAIcon from "./FAIcon";
+import Button from "./Button";
 
 export default function PageHeader({
   title,
@@ -16,9 +17,9 @@ export default function PageHeader({
       {launchHref &&
         <div>
           <Link href={launchHref}>
-            <div className='border border-gray-800 p-2 px-4 hover:bg-yellow-100'>
+            <Button className='shadow md:shadow-black/60 md:bg-slate-400'>
               Launch<FAIcon icon='external-link-alt' right className='h-4 inline'/>
-            </div>
+            </Button>
           </Link>
         </div>
       }

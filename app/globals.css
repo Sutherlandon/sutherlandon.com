@@ -7,8 +7,9 @@
   --foreground-rgb: 0, 0, 0;
   --bg-hex: #FAEEED;
   --drawer-width: 280px;
-  --sm-gradient-edge: 26.2%;
-  --md-gradient-edge: 26.2%;
+  --gradient-edge: 26%;
+  --sm-gradient-edge-off: 26.5%;
+  --md-gradient-edge-off: 26.2%;
   --sm-header-height: 160px;
   --md-header-height: 490px;
 }
@@ -28,13 +29,13 @@ body {
 }
 
 .bg-vGradientSm {
-  background: linear-gradient(-60deg, var(--bg-hex) var(--sm-gradient-edge), transparent var(--sm-gradient-edge)),
-    linear-gradient(60deg, var(--bg-hex) var(--sm-gradient-edge), transparent var(--sm-gradient-edge));
+  background: linear-gradient(-60deg, var(--bg-hex) var(--gradient-edge), transparent var(--sm-gradient-edge-off)),
+    linear-gradient(60deg, var(--bg-hex) var(--gradient-edge), transparent var(--sm-gradient-edge-off));
 }
 
 .bg-vGradientMd {
-  background: linear-gradient(-60deg, var(--bg-hex) var(--md-gradient-edge), transparent var(--md-gradient-edge)),
-    linear-gradient(60deg, var(--bg-hex) var(--md-gradient-edge), transparent var(--md-gradient-edge));
+  background: linear-gradient(-60deg, var(--bg-hex) var(--gradient-edge), transparent var(--md-gradient-edge-off)),
+    linear-gradient(60deg, var(--bg-hex) var(--gradient-edge), transparent var(--md-gradient-edge-off));
 }
 
 .bg-forest {

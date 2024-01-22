@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"
+import Button from "./Button";
 
 function MenuItem({
   href,
@@ -14,7 +15,7 @@ function MenuItem({
 }) {
   return (
     <Link href={href} onClick={onClick} prefetch>
-      <div className='border border-gray-800 flex p-2 px-4 mb-4 items-center hover:bg-yellow-100'>
+      <Button>
         <div className='rounded mr-4 bg-white' style={{ boxShadow: '#717171 1px 1px 5px 0px' }}>
           <Image
             src={image}
@@ -24,8 +25,8 @@ function MenuItem({
             alt='cribbage icon'
           />
         </div>
-        <div className='text-gray-800'>{text}</div>
-      </div>
+        <div>{text}</div>
+      </Button>
     </Link>
   );
 }
