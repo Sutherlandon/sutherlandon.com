@@ -39,7 +39,7 @@ body {
 }
 
 .bg-forest {
-  background-image: linear-gradient(to bottom, hsl(0deg 0% 100% / 15%), hsl(0deg 0% 100% / 15%)), url(/img/fall-forest-4k.jpg);
+  background-image: linear-gradient(to bottom, hsl(0deg 0% 100% / 15%), hsl(0deg 0% 100% / 15%)), url(/img/fall-forest-1k.jpg);
 }
 
 .logo-color {
