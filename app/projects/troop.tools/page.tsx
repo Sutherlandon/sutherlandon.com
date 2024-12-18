@@ -14,7 +14,7 @@ export default function Page() {
     <div>
       <PageHeader
         title='Troop.Tools'
-        launchHref='https://troop.tools'
+        launchHref='https://trooptools.sutherlandon.com'
       />
       <Block className='mb-8'>
         <Image
@@ -35,7 +35,7 @@ export default function Page() {
         Use the links below to click around and see what the app is all about. 
       </Block>
       <Block>
-        App: <Link href='https://troop.tools' className='underline text-blue-500'>troop.tools</Link><br />
+        App: <Link href='https://trooptools.sutherlandon.com' className='underline text-blue-500'>troop.tools</Link><br />
         Source: <Link href='https://github.com/sutherlandon/troop.tools' className='underline text-blue-500'>Troop.Tools on Github</Link>
       </Block>
     </div>
