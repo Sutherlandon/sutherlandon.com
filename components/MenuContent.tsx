@@ -51,6 +51,13 @@ export default function MenuContent({
         />
       }
       <MenuItem
+        href='/projects/lunar-landon'
+        image='/img/app-icons/lunar-landon-192.png'
+        text='Lunar Landon'
+        onClick={close}
+        noHome={noHome}
+      />
+      <MenuItem
         href='/projects/troop.tools'
         image='/img/app-icons/troop.tools-192.png'
         text='Troop.Tools'
