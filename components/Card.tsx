@@ -21,7 +21,7 @@ export default function Card({
 }: CardProps) {
   return (
     <Link href={linkUrl}>
-      <div className="block max-w-[80%] w-[15rem] md:w-[12rem] h-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer hover:scale-105 bg-white hover:bg-gray-100 border border-slate-800">
+      <div className="block w-[15rem] md:w-[12rem] h-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer hover:scale-105 bg-white hover:bg-gray-100 border border-slate-800">
         <div className={imageBg}>
           <Image
             src={imageUrl}
