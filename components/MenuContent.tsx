@@ -1,24 +1,27 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image"
 import Button from "./Button";
+import { usePathname } from "next/navigation";
 
 function MenuItem({
   href,
   image,
+  imageBg,
   text,
   onClick,
-  noHome,
 }: {
   href: string,
   image: string,
+  imageBg?: string,
   text: string,
   noHome?: boolean,
   onClick?: () => void,
 }) {
   return (
     <Link href={href} onClick={onClick} prefetch>
-      <Button className={noHome ? 'pl-0' : ''}>
-        <div className='rounded mr-4 bg-white shadow-md shadow-black/25'>
+      <Button>
+        <div className={`rounded mr-4 bg-white shadow-md shadow-black/25 ${imageBg}`}>
           <Image
             src={image}
             className='rounded'
@@ -40,6 +43,12 @@ export default function MenuContent({
   noHome?: boolean,
   close?: () => void,
 }) {
+  const pathname = usePathname();
+
+  if (pathname === '/') {
+    return null;
+  }
+
   return (
     <>
       {!noHome &&
@@ -51,39 +60,41 @@ export default function MenuContent({
         />
       }
       <MenuItem
+        href='/projects/retrograde'
+        image='/img/app-icons/retrograde-192.png'
+        imageBg="bg-gradient-to-b from-black to-sky-400"
+        text='Retrograde'
+        onClick={close}
+      />
+      <MenuItem
         href='/projects/lunar-landon'
         image='/img/app-icons/lunar-landon-192.png'
         text='Lunar Landon'
         onClick={close}
-        noHome={noHome}
       />
       <MenuItem
         href='/projects/troop.tools'
         image='/img/app-icons/troop.tools-192.png'
         text='Troop.Tools'
         onClick={close}
-        noHome={noHome}
       />
       <MenuItem
         href='/projects/cribbage'
         image='/img/app-icons/cribbage-192.png'
         text='Cribbage'
         onClick={close}
-        noHome={noHome}
       />
       <MenuItem
         href='/projects/qwixx'
         image='/img/app-icons/qwixx-192.png'
         text='QWIXX'
         onClick={close}
-        noHome={noHome}
       />
       <MenuItem
         href='/projects/tsweeper'
         image='/img/app-icons/tsweeper-192.png'
         text='T*Sweeper'
         onClick={close}
-        noHome={noHome}
       />
     </>
   );

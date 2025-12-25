@@ -22,7 +22,7 @@ export default function Page() {
           width='643'
           height='340'
           alt='Cribbage Board Showcase'
-          className='max-w-full'
+          className='max-w-full m-auto'
           fetchPriority='high'
         />
       </Block>

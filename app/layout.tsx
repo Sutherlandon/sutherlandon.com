@@ -60,10 +60,7 @@ export default function RootLayout({
               <MenuButton />
             </div>
           </div>
-          <div
-            id='content'
-            className='p-4 pt-8 text-gray-800'
-          >
+          <div id='content' className='p-4 pt-8 text-gray-800'>
             <div className='max-w-[60rem]'>
               {children}
             </div>
@@ -93,17 +90,39 @@ export default function RootLayout({
               <MenuContent />
             </div>
           </div>
-          <div
-            id='content'
-            className={`p-8 text-gray-800 ml-[--drawer-width] -mt-[calc(var(--md-header-height)/2+10px)] bg-[--bg-hex]`}
-          >
+          <div id='content' className={`p-8 text-gray-800 ml-[--drawer-width] -mt-[calc(var(--md-header-height)/2+10px)] bg-[--bg-hex]`}>
             <div className='max-w-[60rem]'>
               {children}
             </div>
           </div>
         </div>
+        <div id='footer' className={`flex flex-wrap flex-col md:flex-row gap-4 justify-between p-4 text-gray-800 bg-[--bg-hex] border-t border-slate-300`}>
+          <div id='contact-info' className='flex gap-6 justify-center md:justify-start flex-col md:flex-row text-center md:text-left'>
+            <Link href='mailto:hi@sutherlandon.com' target='_blank' className='hover:underline cursor-pointer'>
+              <Image
+                src='/img/web-icons/email.png'
+                width='24'
+                height='24'
+                alt='Email Icon'
+                className='inline-block mr-2'
+              />
+              hi@sutherlandon.com
+            </Link>
+            <Link href='https://github.com/sutherlandon' target='_blank' className='hover:underline cursor-pointer'>
+              <Image
+                src='/img/web-icons/github-mark.svg'
+                width='20'
+                height='20'
+                alt='Github Icon'
+                className='inline-block mr-2 mb-1'
+              /> Sutherlandon
+            </Link>
+          </div>
+          <div className='text-center text-sm'>
+            &copy; {new Date().getFullYear()} Sutherlandon, LLC. All rights reserved.
+          </div>
+        </div>
       </body>
-
     </html>
   );
 }
