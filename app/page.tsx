@@ -5,18 +5,15 @@ export default function Page() {
   return (
     <div>
       <Block className='text-4xl'>
-        &quot;I build the things I wish already existed.&quot;
+        <h1>Thoughtful software, built in Northern New Mexico.</h1>
       </Block>
       <Block>
-        I&apos;m a software engineer from who enjoys turning messy problems into clean, reliable systems. 
-        I build things that are meant to last—thoughtful interfaces, well-structured APIs, and tools 
-        that make life easier for the people using them. Code is my medium, but clarity is the goal.
+        <p>We’re a small team focused on building the things we wish already existed—clean systems,
+        intuitive interfaces, and tools designed to quietly do their job well. Code is our medium,
+        but clarity is always the goal.</p>
       </Block>
-      <Block>
-        Click the app icons below to explore my favorite projects.
-      </Block>
-      <Block className='mb-20'>
-        Hi, my name is Landon. 👋
+      <Block className='text-2xl'>
+        <h2>Explore our favorite projects</h2>
       </Block>
       <Block className="flex flex-wrap gap-8 mb-16 justify-center md:justify-start">
         <Card

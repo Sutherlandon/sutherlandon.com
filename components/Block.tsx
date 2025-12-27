@@ -9,7 +9,7 @@ export default function Block({
   className?: string,
 }) {
   return (
-    <div className={clsx('mb-4', className)} {...rest}>
+    <div className={clsx('mb-10', className)} {...rest}>
       {children}
     </div>
   );
