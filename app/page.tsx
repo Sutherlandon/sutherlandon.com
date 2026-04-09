@@ -1,16 +1,16 @@
 import Block from '@/components/Block';
 import Card from '@/components/Card';
+import InterviewChat from '@/components/InterviewChat';
 
 export default function Page() {
   return (
     <div>
-      <Block className='text-4xl'>
-        <h1>Thoughtful software, built in Northern New Mexico.</h1>
-      </Block>
       <Block>
-        <p>We’re a small team focused on building the things we wish already existed—clean systems,
-        intuitive interfaces, and tools designed to quietly do their job well. Code is our medium,
-        but clarity is always the goal.</p>
+        <div className='text-center'>
+          <h1 className='text-3xl md:text-4xl font-bold mb-2'>What do you want to know about me?</h1>
+          <p className='text-slate-500 mb-6'>Ask my AI anything about my experience, skills, or projects.</p>
+        </div>
+        <InterviewChat />
       </Block>
       <Block className='text-2xl'>
         <h2>Explore our favorite projects</h2>
@@ -38,7 +38,7 @@ export default function Page() {
           imageAlt="Troop Tools Showcase"
           linkUrl="/projects/troop.tools"
         />
-        <Card 
+        <Card
           title="Cribbage Board"
           description="A digital cribbage board."
           imageUrl="/img/app-icons/cribbage-192.png"
