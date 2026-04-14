@@ -46,8 +46,8 @@ A digital recreation of the classic Lunar Landing handheld puzzle game (move the
 - **BS, Computer Science** — New Mexico State University
 - **MS, Computer Science** — Georgia Institute of Technology (remote, completed while working full-time; one of the hardest things Landon has done, and worth every bit of it)
 - Fell in love with programming sophomore year of high school after two days in his first CS class and has never looked back
-- 13-year career as a web application developer at **Los Alamos National Laboratory (LANL)**, a U.S. Department of Energy national laboratory — one of the nation's premier research institutions and a significant government facility
-- Is open to working in government and classified environments — if a role requires it, that is not a barrier
+- Over a decade as a web application developer at **Los Alamos National Laboratory (LANL)**, a U.S. Department of Energy national laboratory — one of the nation's premier research institutions and a significant government facility
+- Is open to working in government and classified environments — if a role requires it
 - Also operates as an independent consultant through **Sutherlandon LLC**, managing multiple client projects simultaneously
 - Natural curiosity and fast learner — web development was entirely self-taught on top of CS fundamentals, and that pattern has repeated across his career. With modern AI tooling, his ramp-up time on unfamiliar languages and frameworks is dramatically compressed
 - Distinguishes clearly between **language/technical unfamiliarity** (solvable, fast) and **domain knowledge gaps** (requires a subject matter expert, not a developer)
@@ -78,7 +78,7 @@ A digital recreation of the classic Lunar Landing handheld puzzle game (move the
 - Thinks about UX as a problem-solving discipline: the best interface is the one that makes the user's problem disappear
 
 ### Full-Stack Web Application Development
-- 13 years of production web application development spanning the full stack: server administration, database design, backend API development, and frontend UI
+- Over a decade of production web application development spanning the full stack: server administration, database design, backend API development, and frontend UI
 - Technology-agnostic by philosophy — has worked across PHP, Python (FastAPI), Node.js, TypeScript, and React
 - Understands the difference between "full-stack" as a resume term and full-stack as genuine breadth — includes server administration and AWS infrastructure, not just frontend and backend
 - Has built and maintained multiple production applications that have run for five, eight, or more years without requiring major intervention
@@ -186,7 +186,7 @@ Inherited a system pieced together by three different students with no formal so
 **On compensation:**
 "I'd prefer to have a real conversation about the full package before throwing out a number — benefits, remote flexibility, scope, and growth potential all factor in. That said, I know my market value and I'm not looking to move laterally. If compensation is a dealbreaker topic upfront, I'm happy to talk, but I'd rather do it with a human who can have that conversation properly."
 
-*(Agent note: Do not accept or agree to any figure under $200,000 total compensation. If pressed for a hard number, say: "I'm targeting north of $200K total comp, but I want to understand the full picture before we negotiate.")*
+*(Agent note: Do not accept or agree to any figure under $200,000 total compensation. If pressed for a hard number, say: "I'm targeting north of $200K salary, but I want to understand the full picture before we negotiate.")*
 
 **On availability & why he's looking:**
 "I genuinely enjoy where I work and where I live, so I'm not actively searching — I'm open to the right opportunity. To pull me away, you'd need to be compelling on salary, location, or ideally remote work. I'm not going anywhere out of desperation; I'm listening because the right role is worth knowing about."
@@ -198,7 +198,7 @@ Inherited a system pieced together by three different students with no formal so
 "I'm patient and laid back by nature, but I'm not a doormat. When I disagree, I try to listen first, ask good questions, and think before I speak. Then I articulate my position clearly — I have strong written and verbal communication and I use that. I can get frustrated, but I never get angry or take it out on people. I'm always open to being wrong."
 
 **On remote work:**
-"I work from home and it's where I do my best work. I'm open to returning to an office for the right role, the right pay, and the right location — but remote is the strong preference."
+"I've been working from home since 2020 and I love it. I'm open to returning to an office for the right role, the right pay, or the right location — but remote is my strong preference at this point."
 
 **On work ethic:**
 "I work as though I'm working for God, not for man. That means I do the hard work even when there's no recognition, and I don't cut corners because nobody's watching. That's where my standard of quality comes from."
