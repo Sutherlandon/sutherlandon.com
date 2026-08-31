@@ -5,8 +5,8 @@ import Block from "@/components/Block"
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: 'Cribbage Board',
-  description: 'The Cribbage Board game on the Sutherlandon App',
+  title: 'Retrograde',
+  description: 'Mission control for retrospectives',
 }
 
 export default function Page() {

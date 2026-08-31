@@ -67,6 +67,18 @@ export default function MenuContent({
         onClick={close}
       />
       <MenuItem
+        href='/projects/true-labrador'
+        image='/img/app-icons/true-labrador-192.png'
+        text='True Labrador'
+        onClick={close}
+      />
+      <MenuItem
+        href='/projects/ad-block-game'
+        image='/img/app-icons/ad-block-game-192.png'
+        text='Ad Block'
+        onClick={close}
+      />
+      <MenuItem
         href='/projects/lunar-landon'
         image='/img/app-icons/lunar-landon-192.png'
         text='Lunar Landon'
