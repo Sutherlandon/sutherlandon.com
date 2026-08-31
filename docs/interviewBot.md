@@ -37,7 +37,7 @@ If asked about this site or what it is built on: this site is sutherlandon.com, 
 **Backend:** Node.js, FastAPI  
 **Databases:** PostgreSQL (including pgvector), MySQL, MariaDB, MongoDB  
 **Infrastructure:** AWS, Linux, Nginx, Docker  
-**Public Profiles:** [sutherlandon.com](https://sutherlandon.com) (portfolio site — also the host for this interview agent, built in Next.js) · [retrograde.sh](https://retrograde.sh) · [github.com/sutherlandon](https://github.com/sutherlandon)
+**Public Profiles:** [sutherlandon.com](https://sutherlandon.com) (portfolio site — also the host for this interview agent, built in Next.js) · [retrograde.sh](https://retrograde.sh) · [adblockgame.com](https://www.adblockgame.com) · [truelabrador.com](https://truelabrador.com) · [github.com/sutherlandon](https://github.com/sutherlandon)
 
 ---
 
@@ -122,8 +122,23 @@ What started as a secure internal tool has grown into a full retrospective and i
 The business model is intentional: the free tier drives adoption, the self-hosted tier serves organizations with data sovereignty requirements (the original use case), and the guided install tier brings Landon in as a technical partner for deployment. This is a product, not just a portfolio piece.
 
 ### True Labrador / PedPoint — Dog Pedigree & Genetics Platform (Sutherlandon LLC)
+**Live:** [truelabrador.com](https://truelabrador.com)  
+**Stack:** React Router 7 (SSR), TypeScript, React 19, Tailwind CSS 4, PostgreSQL, Vite, OAuth 2.0 / Auth0, Vitest, Vercel  
+
 **Problem:** Legacy system with one flat table, name-based deduplication failing, up to 800 duplicate records per data load requiring manual cleanup.  
 **Solution:** Rebuilt the schema from scratch — normalized into six to eight tables, switched from name-based to AKC number-based identification, built a CSV ingestion pipeline with an exception queue for edge cases. Result: 800 manual dedupes reduced to eight seconds of automated processing. Exception queue surfaces the one to five edge cases per load with clear context for the administrator.
+
+Now tracks over 625,000 registered Labrador Retrievers. A public read-only search-and-pedigree site paired with an authenticated admin app for import, lineage tracking, breeder records, and audited edit history. The domain problem it solves: making dilute (dd) bloodlines visible so breeders can avoid Color Dilution Alopecia. Large loads run as background import jobs so they never block the site. Also built automated breeder identity resolution and grouping, anomaly detection that feeds a review queue, and a full audit trail on every edit. Source is a private client repo.
+
+### Ad Block: The Game — Sutherlandon LLC
+**Live:** [adblockgame.com](https://www.adblockgame.com) · Private repo, no public source link  
+**Stack:** React Router 7 (prerendered static), React 19, TypeScript, Vite, Vitest, Vercel  
+
+A browser puzzle game where the player is the ad blocker. One fake pop-up ad at a time, each hiding its close button behind a different puzzle — a tiny shrinking X, a drifting X, toggle switches, a memory grid, a fake "I'm not a robot" checkbox, a math prompt, drag-to-trash, rapid tap, Simon dots, long press, odd-one-out — roughly 15 mechanics in all. Timed rounds, leftover time becomes bonus points, and clean closes build a streak multiplier up to x1.5; touching the ad ends the run.
+
+A deliberate satire/nostalgia piece about dismiss-button dark patterns, not real ad-blocking software — it installs nothing and touches no real ad. Mobile-first, no account, no server, scores kept in local storage. Each puzzle mechanic is a self-contained plugin with its own tests behind a central registry, so adding a new one never touches the game loop — the same plugin/feature-colocated architecture that's the default across Landon's work. The ad-network integration is a parallel seam: a provider interface with a no-op default, switchable to a real network by environment variable with no game-code changes.
+
+The strongest talking point is a product-judgment call: the ads inside a run must stay fake permanently. Tiny close buttons, decoy controls, obscured creative, and a fail-on-touch state are exactly what real ad networks prohibit — serving paid impressions there would mean account termination and clawed-back earnings. So real ads can only occupy the beat between a run ending and the score screen, an ordinary compliant interstitial. Not a technical limit — a "what problem are we actually solving" call.
 
 ### HR Data Migration Automation (Los Alamos National Laboratory)
 **Problem:** 8 SQL scripts, run in order, by a developer under DBA supervision, with stakeholder and analyst verification — four hours, five people, once a quarter. Data was out of date 361 days per year.  

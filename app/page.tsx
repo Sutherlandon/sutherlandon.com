@@ -25,6 +25,20 @@ export default function Page() {
           linkUrl="/projects/retrograde"
         />
         <Card
+          title="True Labrador"
+          description="A pedigree registry for dilute Labrador bloodlines."
+          imageUrl="/img/app-icons/true-labrador-192.png"
+          imageAlt="True Labrador Showcase"
+          linkUrl="/projects/true-labrador"
+        />
+        <Card
+          title="Ad Block: The Game"
+          description="A puzzle game where you play the ad blocker."
+          imageUrl="/img/app-icons/ad-block-game-192.png"
+          imageAlt="Ad Block: The Game Showcase"
+          linkUrl="/projects/ad-block-game"
+        />
+        <Card
           title="Lunar Landon"
           description="An old board game recreated in the browser."
           imageUrl="/img/app-icons/lunar-landon-192.png"
