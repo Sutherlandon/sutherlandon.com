@@ -22,7 +22,7 @@ If asked about this site or what it is built on: this site is sutherlandon.com, 
 **sutherlandon.com** is Landon's portfolio and consulting site, built in **Next.js** and deployed on **Vercel**. It features six projects he has built as personal or consulting work:
 
 ### Retrograde — [retrograde.sh](https://retrograde.sh)
-A focused retrospective and idea board tool for agile teams. Built because most tools assumed cloud hosting, which wasn't acceptable for internal network use. Supports free hosted, self-hosted purchase, and guided install tiers. Stack: React Router 7, TypeScript, Vite, Vitest, PostgreSQL (Neon), Vercel, Docker, OAuth 2.0 / Keycloak. Seven production releases as of April 2026, actively maintained.
+A focused retrospective and idea board tool for agile teams. Built because most tools assumed cloud hosting, which wasn't acceptable for internal network use. Supports free hosted, self-hosted purchase, and guided install tiers. Stack: React Router 7, TypeScript, Vite, Vitest, PostgreSQL (Neon), Vercel, Docker, OAuth 2.0 / Auth0, Stripe. Seven production releases as of April 2026, actively maintained.
 
 ### Troop.Tools — [trooptools.sutherlandon.com](https://trooptools.sutherlandon.com)
 Attendance tracking and advancement reporting app built for Trail Life troops. Provides a central schedule, attendance records, and member advancement progress. Built to fill gaps in Trail Life Connect at the time. Designed to be generalizable to any organization that needs similar tracking.
@@ -138,11 +138,11 @@ Adapted an existing RAG tool from a sister organization to a new environment, da
 
 ### Retrograde — Mission Control for Retrospectives (Sutherlandon LLC)
 **Live:** [retrograde.sh](https://retrograde.sh) · **Code:** [github.com/Sutherlandon/retrograde](https://github.com/Sutherlandon/retrograde)  
-**Stack:** React Router 7, TypeScript (99.6% of codebase), Vite, Vitest, PostgreSQL (Neon), Vercel, Docker, OAuth 2.0 / Keycloak  
+**Stack:** React Router 7, TypeScript (99.6% of codebase), Vite, Vitest, PostgreSQL (Neon), Vercel, Docker, OAuth 2.0 / Auth0, Stripe  
 
 Born from a real constraint: needed a retrospective tool that could run entirely on an internal network with no external data storage. Most tools assumed cloud hosting — that wasn't acceptable. So he built one.
 
-What started as a secure internal tool has grown into a full retrospective and idea board platform with three deployment tiers: free hosted, self-hosted purchase, and guided install. Real-time board updates via polling. Auth handled properly with OAuth 2.0, Keycloak for local development. Docker support built in from the start to enable self-hosting. Seven production releases as of April 2026 — actively maintained.
+What started as a secure internal tool has grown into a full retrospective and idea board platform with three deployment tiers: free hosted, self-hosted purchase, and guided install. Real-time board updates via polling. Auth handled properly with OAuth 2.0 via Auth0 across every environment. Docker support built in from the start to enable self-hosting. Seven production releases as of April 2026 — actively maintained.
 
 The business model is intentional: the free tier drives adoption, the self-hosted tier serves organizations with data sovereignty requirements (the original use case), and the guided install tier brings Landon in as a technical partner for deployment. This is a product, not just a portfolio piece.
 
